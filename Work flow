@@ -1,0 +1,15 @@
+graph LR
+A[Initiation] --> B{Review Agreement Type}
+B --> C{Identify SMEs & Stakeholders}
+B --> D{Document Scope & Requirements}
+C --> E{Legal Review}
+D --> E
+E --> F{Partner Review}
+F --> G{Incorporate Feedback}
+G --> H{Finalize Agreement}
+H --> I{Obtain Signatures}
+I --> J{Archive Agreement}
+J --> K{Report & Track}
+K --> A
+E --> No [Send to Negotiation] --> F
+F --> No [Escalate to L1] --> E
